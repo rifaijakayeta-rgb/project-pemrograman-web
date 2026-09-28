@@ -3,36 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Halaman Anggota 2</title>
-    <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; }
-        header { background: #28a745; color: #fff; padding: 20px; text-align: center; }
-        nav { text-align: center; margin: 20px 0; }
-        nav a { margin: 0 15px; color: #333; text-decoration: none; font-weight: bold; }
-        main { padding: 40px; max-width: 800px; margin: auto; }
-    </style>
+    <title>Profil Fajri</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
+    <nav class="navbar">
+        <a class="brand" href="index.html">Kelompok Rifai &amp; Fajri</a>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-burger" aria-label="Buka menu">&#9776;</label>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rifai.html">Rifai</a></li>
+            <li><a href="fajri.html" class="active">Fajri</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero green">
         <h1>Profil Anggota 2</h1>
     </header>
 
-    <nav>
-        <a href="index.html">Kembali ke Home</a>
-    </nav>
-
     <main>
-        <h2>Biodata Diri</h2>
-        <ul>
-            <li><strong>Nama:</strong>Muhamad nurul fajri</li>
-            <li><strong>NIM:</strong> 3337250056</li>
-            <li><strong>Tugas Kontribusi:</strong> Menyusun konten utama, integrasi link navigasi, dan halaman profil individu 2.</li>
-        </ul>
-        
-        <h2>Keahlian & Minat</h2>
-        <p>tidur & kaya</p>
+        <div class="card">
+            <h2>Biodata Diri</h2>
+            <ul>
+                <li><strong>Nama:</strong> Muhamad Nurul Fajri</li>
+                <li><strong>NIM:</strong> 3337250056</li>
+                <li><strong>Tugas Kontribusi:</strong> Menyusun konten utama, integrasi link navigasi, dan halaman profil individu 2.</li>
+            </ul>
+            <h2>Keahlian &amp; Minat</h2>
+            <p>Tidur &amp; kaya.</p>
+        </div>
     </main>
 
+    <footer><p>&copy; 2026 Tugas Kelompok HTML, CSS &amp; Git</p></footer>
 </body>
 </html>
