@@ -4,39 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Halaman Utama Kelompok</title>
-    <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; text-align: center; }
-        header { background: #333; color: #fff; padding: 20px; }
-        nav { margin: 20px 0; }
-        nav a { margin: 0 15px; color: #333; text-decoration: none; font-weight: bold; }
-        nav a:hover { color: #007BFF; }
-        main { padding: 40px; max-width: 800px; margin: auto; }
-        .footer { background: #f4f4f4; padding: 10px; position: fixed; width: 100%; bottom: 0; }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-
-    <header>
-        <h1>Selamat Datang di Website Kelompok rifai jaka</h1>
-        <p>Proyek Kolaborasi HTML dan Git</p>
-    </header>
-
-    <!-- Navigasi untuk menggabungkan halaman -->
-    <nav>
-        <a href="index.html">Home</a> | 
-        <a href="rifai.html">rifai</a> | 
-        <a href="fajri.html">fajri</a>
+    <nav class="navbar">
+        <a class="brand" href="index.html">Kelompok Rifai &amp; Fajri</a>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-burger" aria-label="Buka menu">&#9776;</label>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="rifai.html">Rifai</a></li>
+            <li><a href="fajri.html">Fajri</a></li>
+        </ul>
     </nav>
 
+    <header class="hero">
+        <h1>Selamat Datang di Website Kelompok Rifai &amp; Fajri</h1>
+        <p>Proyek Kolaborasi HTML, CSS &amp; Git</p>
+    </header>
+
     <main>
-        <h2>Tentang Proyek Ini</h2>
-        <p>Website ini dibuat oleh kelompok kami untuk memenuhi tugas pemrograman web. Halaman utama ini dirancang bersama melalui kolaborasi GitHub, sedangkan halaman profil dibuat secara individu oleh masing-masing anggota kelompok.</p>
+        <div class="card">
+            <h2>Tentang Proyek Ini</h2>
+            <p>Website ini dibuat oleh kelompok kami untuk memenuhi tugas pemrograman web. Halaman utama ini dirancang bersama melalui kolaborasi GitHub, sedangkan halaman profil dibuat secara individu oleh masing-masing anggota kelompok.</p>
+            <div class="member-cards">
+                <a href="rifai.html" class="member-card">Profil Rifai</a>
+                <a href="fajri.html" class="member-card">Profil Fajri</a>
+            </div>
+        </div>
     </main>
 
-    <div class="footer">
-        <p>&copy; 2026 Tugas Kelompok HTML & Git</p>
-    </div>
-
+    <footer><p>&copy; 2026 Tugas Kelompok HTML, CSS &amp; Git</p></footer>
 </body>
 </html>
